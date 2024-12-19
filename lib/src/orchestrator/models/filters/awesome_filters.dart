@@ -46,4 +46,5 @@ List<AwesomeFilter> awesomePresetFiltersList = [
   AwesomeFilter.Walden,
   AwesomeFilter.Willow,
   AwesomeFilter.XProII,
+  AwesomeFilter.vintage,
 ];
