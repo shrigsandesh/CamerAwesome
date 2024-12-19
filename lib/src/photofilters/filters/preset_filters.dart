@@ -356,6 +356,17 @@ class CharmesFilter extends ColorFilter {
   }
 }
 
+//Vintage: example filter
+class VintageFilter extends ColorFilter {
+  VintageFilter() : super(name: "Vintage") {
+    subFilters.add(BrightnessSubFilter(0.05));
+    subFilters.add(ContrastSubFilter(0.1));
+    subFilters
+        .add(SaturationSubFilter(-0.2)); // Reduce saturation for vintage look
+    subFilters.add(SepiaSubFilter(0.2)); // Add sepia tone
+  }
+}
+
 final List<Filter> presetFiltersList = [
   NoFilter(),
   AddictiveBlueFilter(),
@@ -400,4 +411,5 @@ final List<Filter> presetFiltersList = [
   WaldenFilter(),
   WillowFilter(),
   XProIIFilter(),
+  VintageFilter(),
 ];

@@ -328,4 +328,14 @@ class AwesomeFilter {
           ],
         ).matrix,
       );
+  static AwesomeFilter get vintage => AwesomeFilter(
+        name: 'Vintage',
+        outputFilter: preset_filters.VintageFilter(),
+        matrix: [
+          1.2, 0.0, 0.0, 0.0, 0.0, // Red channel
+          0.0, 1.0, 0.0, 0.0, 0.0, // Green channel
+          0.0, 0.0, 0.8, 0.0, 0.0, // Blue channel
+          0.0, 0.0, 0.0, 1.0, 0.0, // Alpha channel
+        ],
+      );
 }
